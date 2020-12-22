@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  
+  
+<app-header></app-header>  
+<app-banner *ngIf="router.url == '/'"></app-banner>
+<app-course-featured *ngIf="router.url == '/'"></app-course-featured>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+
+
+
