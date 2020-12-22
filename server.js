@@ -13,11 +13,11 @@ const forceSSL = function (){
     }
 }
 
-app.use(express.static(__dirname + '/dist/CodingCastra'));
+app.use(express.static(__dirname + '/dist/amishatutorial/'));
 
 app.get('/', function(req,res)
 {
-    res.sendFile(path.join(__dirname + '/dist/CodingCastra/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/amishatutorial/index.html'));
 
 });
 //Start the app by listening
