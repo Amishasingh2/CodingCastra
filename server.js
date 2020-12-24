@@ -1,6 +1,6 @@
-const express = required('express');
+const express = require('express');
 const app = express();
-const path = required('path');
+const path = require('path');
 const forceSSL = function (){
     return function (req, res, next) {
         if (req.headers['x-forwarded-proto']!== 'https')
